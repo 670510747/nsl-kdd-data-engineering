@@ -1,0 +1,5 @@
+setup,Accuracy,Precision_macro,Recall_macro,F1_macro
+0 raw (no engineering),0.785,0.747,0.669,0.660
+1 + dedup + drop constant,0.783,0.760,0.662,0.661
+2 + drop correlated (>0.95),0.791,0.761,0.690,0.680
+3 + engineered features,0.775,0.757,0.633,0.627

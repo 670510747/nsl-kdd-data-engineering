@@ -1,0 +1,15 @@
+Source: supplied notebook cell 30; rounded historical output, not rerun during packaging.
+
+
+Classification Report for '2 + drop correlated (>0.95)':
+              precision    recall  f1-score   support
+
+      Normal       0.71      0.96      0.82      9711
+         DoS       0.94      0.79      0.86      7460
+       Probe       0.82      0.67      0.74      2421
+         R2L       0.94      0.32      0.48      2885
+         U2R       0.39      0.70      0.51        67
+
+    accuracy                           0.79     22544
+   macro avg       0.76      0.69      0.68     22544
+weighted avg       0.83      0.79      0.78     22544
