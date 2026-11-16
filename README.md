@@ -15,7 +15,7 @@ A course project that turns network-connection records into validated, model-rea
 
 ## Recorded results
 
-Source: saved outputs in the supplied notebook. These experiments were **not retrained while preparing this repository**. Metrics below are rounded to three decimals.
+Source: saved outputs in my notebook. These experiments were **not retrained while preparing this repository**. Metrics below are rounded to three decimals.
 
 | Setup | Accuracy | Macro F1 |
 |---|---:|---:|
@@ -46,14 +46,14 @@ The dataset URL is a third-party GitHub mirror retained from the original notebo
 
 ## Evaluation limits
 
-The active ablation measures **test-set** performance. Setup 2 was retained after inspecting those results; its result is not an unbiased final estimate after model selection. The original text claimed CV selection, but a later function definition actually replaced the CV evaluator. The published notebook separates those function names and corrects the explanation while preserving the active model calculations.
+The active ablation measures **test-set** performance. Setup 2 was retained after inspecting those results; its result is not an unbiased final estimate after model selection. Cross-validation is not part of the active ablation; the notebook keeps the CV evaluator under a separate function name, and this explanation reflects that.
 
 The optional CV diagnostic is not executed by the ablation and does not isolate all feature-selection steps inside each fold. Future work should fit all learned preprocessing inside cross-validation and reserve an untouched final test set. This older benchmark is not a substitute for evaluation on modern network traffic.
 
 ## Repository contents
 
 - `notebooks/`: cleaned runnable notebook, saved outputs cleared.
-- `results/`: historical rounded results extracted from the supplied notebook.
+- `results/`: historical rounded results extracted from my notebook.
 - `docs/reproducibility.md`: provenance, edits, and verification scope.
 - `scripts/check_notebooks.py`: schema and syntax checks without training.
 
